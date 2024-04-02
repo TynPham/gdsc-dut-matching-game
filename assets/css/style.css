@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Google Sans", sans-serif;
+  background-image: url("../img/bg-trim.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: "Google Sans", sans-serif !important;
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  /* mix-blend-mode: multiply; */
+}
+/*
+* Styles for the Score Panel
+*/
+
+.head {
+  flex: 1;
+  margin-top: 6rem;
+}
+
+.head h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.head span {
+  margin: 0;
+}
+
+.head p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.score-info {
+  display: flex;
+  justify-content: center;
+}
+
+.score-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #0f7deb;
+  width: 86%;
+  border-radius: 8px;
+  margin: 0 10px;
+  box-shadow: 1px 3px 14px -4px rgba(0, 0, 0, 0.75);
+}
+
+.title-move {
+  width: 80px;
+}
+
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  padding: 0 10px;
+  width: 212px;
+  white-space: nowrap;
+}
+
+.moves::before,
+.timer::before {
+  content: attr(data-icon);
+  display: inline-block;
+  margin-right: 5px;
+  font-family: "Font Awesome 5 Free";
+}
+
+.moves {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.restart i {
+  font-size: 24px;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+/*========== Media Query ==========*/
+
+@media screen and (max-width: 320px) {
+  .score-panel {
+    flex-direction: column;
+    height: 100px;
+  }
+}

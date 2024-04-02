@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Matching Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <link rel="stylesheet" href="./assets/css/cards.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  </head>
+
+  <body>
+    <div class="logo" id="app-logo">
+      <img src="assets/img/logo.png" alt="DSC-DUT Logo" />
+    </div>
+    <div class="modal" id="questionModal">
+      <div class="modalContent"></div>
+    </div>
+
+    <div class="modalResult">
+      <div class="modalContent">
+        <p class="modalText"></p>
+        <button class="playAgain">Play Again!</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head">
+        <h1>
+          Matching <span style="color: #4285f4">G</span><span style="color: #ea4335">a</span><span style="color: #34a853">m</span
+          ><span style="color: #fbbc05">e</span>
+        </h1>
+        <p>Your score will be calculated based on moves taken and playing time!</p>
+        <div class="score-info">
+          <section class="score-panel">
+            <div class="title-moves"><span class="moves">3</span> Moves</div>
+
+            <span class="timer"></span>
+
+            <div class="restart">
+              <i class="fa fa-repeat"></i>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="deck"></div>
+
+      <br />
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./assets/js/changeColor.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

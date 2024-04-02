@@ -1,0 +1,49 @@
+/*
+* Styles for the deck of cards
+*/
+
+.deck {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin: 4%;
+  border-radius: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.deck .card {
+  background-image: url("../img/card.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-color: rgba(231, 231, 231, 0.96);
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 1px 3px 8px -5px rgba(0, 0, 0, 0.75);
+}
+
+.deck .card.open.show {
+  background: white;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.deck .card.match {
+  background: #89eda570;
+  box-shadow: 0 0 10px 1px #26964687;
+}
+
+.card img {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  box-sizing: border-box;
+  object-fit: contain;
+  border-radius: 8px;
+}
